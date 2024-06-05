@@ -957,6 +957,30 @@ input[type='checkbox'] {
 
 /* END */
 
+/* Harsh code skills */
+
+.skills__item {
+  margin-bottom: 20px;
+  /* Add space between each skill item */
+}
+
+.skills__titles {
+  margin-bottom: 20px;
+  /* Space after the skills name */
+}
+
+.image-container {
+  margin-bottom: 10px;
+  /* Space after the images */
+}
+
+.skills__bar {
+  margin-top: 20px;
+  /* Space before the skills bar */
+}
+
+
+/* END */
 
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
