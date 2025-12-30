@@ -1,673 +1,1012 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harsh Jambukiya - ML Engineer Portfolio</title>
 
-  <title>Portfolio Website</title>
+    <!--Font Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
 
-  <!--Font Awesome-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
 
-  <!--Font Awesome-->
-  <link rel="stylesheet" href="assets/css/styles.css" />
-</head>
+  <body>
+    <!--==================== STYLE SWITCHER ====================-->
+    <input type="radio" name="color" id="color-1" />
+    <input type="radio" name="color" id="color-2" />
+    <input type="radio" name="color" id="color-3" />
+    <input type="radio" name="color" id="color-4" />
+    <input type="radio" name="color" id="color-5" />
+    <input type="radio" name="color" id="color-6" />
+    <input type="radio" name="color" id="color-7" />
+    <input type="radio" name="color" id="color-8" />
+    <input type="radio" name="color" id="color-9" />
+    <input type="radio" name="color" id="color-10" />
+    <input type="checkbox" id="toggler" />
+    <input type="checkbox" id="day-night" />
 
-<body>
-  <!--==================== STYLE SWITCHER ====================-->
-  <input type="radio" name="color" id="color-1" />
-  <input type="radio" name="color" id="color-2" />
-  <input type="radio" name="color" id="color-3" />
-  <input type="radio" name="color" id="color-4" />
-  <input type="radio" name="color" id="color-5" />
-  <input type="radio" name="color" id="color-6" />
-  <input type="radio" name="color" id="color-7" />
-  <input type="radio" name="color" id="color-8" />
-  <input type="radio" name="color" id="color-9" />
-  <input type="radio" name="color" id="color-10" />
-  <input type="checkbox" id="toggler" />
-  <input type="checkbox" id="day-night" />
-
-  <div class="style__switcher">
-    <label for="toggler" class="style__switcher-toggler">
-      <i class="fa-solid fa-gear fa-spin"></i>
-    </label>
-
-    <label for="day-night" class="style__switcher-theme">
-      <i class="fa-solid fa-sun"></i>
-      <i class="fa-solid fa-moon"></i>
-    </label>
-
-    <h3 class="style__switcher-title">Theme colors</h3>
-
-    <div class="style__switcher-colors">
-      <label for="color-1" class="color-1 color"></label>
-      <label for="color-2" class="color-2 color"></label>
-      <label for="color-3" class="color-3 color"></label>
-      <label for="color-4" class="color-4 color"></label>
-      <label for="color-5" class="color-5 color"></label>
-      <label for="color-6" class="color-6 color"></label>
-      <label for="color-7" class="color-7 color"></label>
-      <label for="color-8" class="color-8 color"></label>
-      <label for="color-9" class="color-9 color"></label>
-      <label for="color-10" class="color-10 color"></label>
-    </div>
-  </div>
-
-  <!--==================== HEADER ====================-->
-  <header class="header">
-    <nav class="nav container">
-      <a href="index.html" class="nav__logo">Harsh Jambukiya</a>
-
-      <input type="checkbox" id="nav-toggler" />
-
-      <label for="nav-toggler" class="nav__toggle">
-        <i class="fa-solid fa-bars"></i>
+    <div class="style__switcher">
+      <label for="toggler" class="style__switcher-toggler">
+        <i class="fa-solid fa-gear fa-spin"></i>
       </label>
 
-      <ul class="nav__list">
-        <li class="nav__item">
-          <a href="#home" class="nav__link active-link">Home</a>
-        </li>
-
-        <li class="nav__item">
-          <a href="#about" class="nav__link">About</a>
-        </li>
-
-        <li class="nav__item">
-          <a href="#qualification" class="nav__link">Experience</a>
-        </li>
-
-        <li class="nav__item">
-          <a href="#services" class="nav__link">Services</a>
-        </li>
-
-        <li class="nav__item">
-          <a href="#works" class="nav__link">Portfolio</a>
-        </li>
-
-        <li class="nav__item">
-          <a href="#contact" class="nav__link">Contact</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
-  <!--==================== MAIN ====================-->
-  <main class="main">
-    <!--==================== HOME ====================-->
-    <section class="home" id="home">
-      <div class="home__container container grid">
-        <div class="home__content">
-          <span class="home__small">Hello</span>
-          <h1 class="home__title">
-            <span>I'm</span> Harsh <br />
-            a <span>Full stack Developer</span>
-          </h1>
-
-          <p class="home__description">
-            I am seeking a challenging position in the field of computer
-            science where I can showcase my theoretical and practical
-            expertise, enhance my research and experimental skills, and
-            advance to senior roles within the technical domains that interest
-            me.
-          </p>
-
-          <div class="home__btns">
-            <a href="#contact" class="btn">Hire Me</a>
-            <a href="#works" class="btn btn--transparent">Portfolio</a>
-          </div>
-        </div>
-
-        <div class="home__img-wrapper">
-          <img src="assets/img/1.png" alt="" class="home__img" />
-        </div>
-      </div>
-    </section>
-
-    <!--==================== ABOUT ====================-->
-    <section class="about section" id="about">
-      <div class="about__container container grid">
-        <div class="about__img-wrapper">
-          <img src="assets/img/profile.jpg" alt="" class="about__img" />
-          <img src="assets/img/profile.jpg" alt="" class="about__img" />
-          <img src="assets/img/profile.jpg" alt="" class="about__img" />
-          <img src="assets/img/profile.jpg" alt="" class="about__img" />
-        </div>
-
-        <div class="about__content">
-          <h2 class="section__title" data-title="Who am i?">
-            I'm Harsh Jambukiya, a Full Stack Developer and Software Engineer
-          </h2>
-
-          <p class="about__description">
-            I'm a Full Stack Developer with a knack for building robust and
-            reliable systems that power dynamic websites and applications. I
-            thrive on solving complex problems and ensuring seamless
-            functionality behind the scenes. Whether it's designing efficient
-            databases or implementing secure user authentication, I am
-            committed to making your online projects successful. Let's
-            collaborate to transform your ideas into reality!
-          </p>
-
-          <ul class="about__data grid">
-            <li class="data__item">
-              <h3 class="data__title">From:</h3>
-              <span class="data__description">Ahmedabad, Gujarat</span>
-            </li>
-
-            <li class="data__item">
-              <h3 class="data__title">Email:</h3>
-              <a href="mailto:harshjambukiya75@gmail.com?subject=Contact&body=Hi%2C%0A%0AI%20saw%20your%20Portfolio%20and%20I%20want%20to%20contact%20you."
-                class="contact__data">harshjambukiya75@gmail.com</a>
-            </li>
-          </ul>
-
-          <div class="about__bottom">
-            <a href="https://drive.google.com/file/d/15xY2BOihuQLJzqJaTKsDNTOsERKd1O0m/view?usp=sharing" target="_blank"
-              class="btn">Download CV</a>
-
-            <div class="about__social-links">
-              <a href="https://github.com/HarshJambukiya" target="_blank" class="about__social-link">
-                <i class="fa-brands fa-github"></i>
-              </a>
-              <a href="https://www.linkedin.com/in/harsh-jambukiya-/" target="_blank" class="about__social-link">
-                <i class="fa-brands fa-linkedin"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--==================== QUALIFICATION ====================-->
-    <section class="qualification section" id="qualification">
-      <h2 class="section__title title-center" data-title="My Journey">
-        Qualification
-      </h2>
-
-      <div class="resume__container container grid">
-        <div class="resume__group">
-          <h3 class="resume__heading">Education</h3>
-
-          <div class="resume__items">
-            <div class="resume__item">
-              <div class="resume__header">
-                <h3 class="resume__subtitle">
-                  LDRP Institute of Technology and Research
-                </h3>
-                <span class="resume__icon">+</span>
-              </div>
-
-              <div class="resume__content">
-                <div class="resume__datea-title">
-                  <h3 class="resume__title">Bachelor of Engineering</h3>
-                  <span class="resume__date">July 2019 – June 2023</span>
-                </div>
-
-                <p class="resume__description">
-                  I graduated with a Bachelor of Engineering in Computer
-                  Science from LDRP-ITR with a CGPA of 6.84 out of 10,
-                  showcasing strong academic performance and proficiency in
-                  computer science fundamentals.
-                </p>
-              </div>
-            </div>
-
-            <div class="resume__item">
-              <div class="resume__header">
-                <h3 class="resume__subtitle">
-                  Swaminarayan Gurukul Rajkot Sansthan
-                </h3>
-                <span class="resume__icon">-</span>
-              </div>
-
-              <div class="resume__content">
-                <div class="resume__datea-title">
-                  <h3 class="resume__title">High School Marks.</h3>
-                  <span class="resume__date">2018 – 2019</span>
-                </div>
-
-                <p class="resume__description">Grade: 67%</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="resume__group">
-          <h3 class="resume__heading">Experience</h3>
-
-          <div class="resume__items">
-            <div class="resume__item">
-              <div class="resume__header">
-                <h3 class="resume__subtitle">.NET Developer</h3>
-                <span class="resume__icon">+</span>
-              </div>
-
-              <div class="resume__content">
-                <div class="resume__datea-title">
-                  <h3 class="resume__title">
-                    Pravik IT Solutions, Ahmedabad
-                  </h3>
-                  <span class="resume__date">October 2023 - March 2024</span>
-                </div>
-
-                <p class="resume__description">
-                  At Pravik IT Solutions, spearheaded an education web
-                  project, crafted APIs for seamless integration, and worked
-                  extensively with DB and .NET technologies to enhance project
-                  functionality and performance.
-                </p>
-              </div>
-            </div>
-
-            <div class="resume__item">
-              <div class="resume__header">
-                <h3 class="resume__subtitle">Angular Developer</h3>
-                <span class="resume__icon">-</span>
-              </div>
-
-              <div class="resume__content">
-                <div class="resume__datea-title">
-                  <h3 class="resume__title">
-                    Vedikin Solutions, Gandhinagar
-                  </h3>
-                  <span class="resume__date">May 2023 - September 2023</span>
-                </div>
-
-                <p class="resume__description">
-                  Key role in Relutech project at Vedikin Solutions: enhanced
-                  data migration to cloud, accurate cost estimation. Design,
-                  development lead.
-                </p>
-                <p style="color: hsl(0, 0%, 87%)">Achievements/Tasks</p>
-                <br />
-                <ul>
-                  <li>
-                    <p>
-                      Directly communicated with clients, comprehended project
-                      needs, and implemented enhancements. Developed Angular
-                      components to elevate functionality.
-                    </p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="resume__item">
-              <div class="resume__header">
-                <h3 class="resume__subtitle">Full stack Developer</h3>
-                <span class="resume__icon">+</span>
-              </div>
-
-              <div class="resume__content">
-                <div class="resume__datea-title">
-                  <h3 class="resume__title">Tatvasoft, Gandhinagar</h3>
-                  <span class="resume__date">May 2022 - June 2022</span>
-                </div>
-
-                <p class="resume__description">
-                  At Tatavsoft, innovatively developed 'Book-e-Sell'
-                  E-commerce site, seamlessly integrating React.js frontend,
-                  .NET backend, and PostgreSQL database
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--==================== SERVICES ====================-->
-    <section class="services section" id="services">
-      <h2 class="section__title title-center" data-title="Services">
-        What I do for you
-      </h2>
-
-      <div class="services__container container grid">
-        <div class="services__item">
-          <i class="fa-solid fa-pen-to-square services__icon"></i>
-
-          <h3 class="services__title">Backend Development</h3>
-          <p class="services__description">
-            I specialize in backend development with expertise in technologies
-            like .NET, FastAPI, and databases such as PostgreSQL, and MySQL.
-          </p>
-
-          <span class="services__no">01</span>
-        </div>
-
-        <div class="services__item">
-          <i class="fa-solid fa-laptop services__icon"></i>
-
-          <h3 class="services__title">Angular Developer</h3>
-          <p class="services__description">
-            Proficient in crafting visually appealing and responsive websites,
-            I translate your vision into reality on the web. Committed to user
-            satisfaction, I prioritize current design principles to deliver an
-            exceptional user experience.
-          </p>
-
-          <span class="services__no">02</span>
-        </div>
-
-        <div class="services__item">
-          <i class="fa-solid fa-chart-area services__icon"></i>
-
-          <h3 class="services__title">Full Stack Development</h3>
-          <p class="services__description">
-            I specialize in Angular for the front end and .NET for the back
-            end. Experienced in Database. Skilled in RESTful API development,
-            ensuring efficient data flow, and adhering to best practices for
-            performance and security.
-          </p>
-
-          <span class="services__no">03</span>
-        </div>
-      </div>
-    </section>
-
-    <!--==================== SKILLS ====================-->
-    <section class="skills section">
-      <h2 class="section__title title-center" data-title="My Talent">
-        Skills
-      </h2>
-
-      <div class="skills__container container grid">
-        <div class="skills__item">
-          <div class="skills__titles">
-            <h3 class="skills__name">Programming Languages</h3>
-            <span class="skills__no">01</span>
-          </div>
-
-          <div class="image-container">
-            <img src="assets/img/c.png" alt="C Logo" width="50" height="50" />
-            <img src="assets/img/c++.png" alt="C++ Logo" width="50" height="50" />
-            <img src="assets/img/c#.jpg" alt="C# Logo" width="50" height="50" />
-          </div>
-
-          <div class="sills__bar">
-            <div class="skills__percentage" style="width: 100%">
-              <span></span>
-            </div>
-          </div>
-        </div>
-
-        <div class="skills__item">
-          <div class="skills__titles">
-            <h3 class="skills__name">CMS</h3>
-            <span class="skills__no">02</span>
-          </div>
-
-          <div class="image-container">
-            <img src="assets/img/WP.png" alt="Wordpress Logo" width="50" height="50" />
-          </div>
-
-          <div class="sills__bar">
-            <div class="skills__percentage" style="width: 100%">
-              <span></span>
-            </div>
-          </div>
-        </div>
-
-        <div class="skills__item">
-          <div class="skills__titles">
-            <h3 class="skills__name">Frontend Technologies</h3>
-            <span class="skills__no">03</span>
-          </div>
-
-          <div class="image-container">
-            <img src="assets/img/html.png" alt="HTML Logo" width="50" height="50" />
-            <img src="assets/img/css.png" alt="CSS Logo" width="50" height="50" />
-            <img src="assets/img/BT.png" alt="BOOTSTREAP Logo" width="50" height="50" />
-            <img src="assets/img/Angular.png" alt="ANGULAR Logo" width="50" height="50" />
-          </div>
-
-          <div class="sills__bar">
-            <div class="skills__percentage" style="width: 100%">
-              <span></span>
-            </div>
-          </div>
-        </div>
-
-        <div class="skills__item">
-          <div class="skills__titles">
-            <h3 class="skills__name">Backend Technologies</h3>
-            <span class="skills__no">04</span>
-          </div>
-
-          <div class="image-container">
-            <img src="assets/img/net-core.png" alt=".Net-core Logo" width="50" height="50" />
-            <img src="assets/img/ASP.png" alt="ASP .net Logo" width="50" height="50" />
-          </div>
-
-          <div class="sills__bar">
-            <div class="skills__percentage" style="width: 100%">
-              <span></span>
-            </div>
-          </div>
-        </div>
-
-        <div class="skills__item">
-          <div class="skills__titles">
-            <h3 class="skills__name">Database Technologies -</h3>
-            <span class="skills__no">05</span>
-          </div>
-
-          <div class="image-container">
-            <img src="assets/img/SQL-server.png" alt="Sql server Logo" width="50" height="50" />
-            <img src="assets/img/PS.png" alt="PostgreSQL Logo" width="50" height="50" />
-            <img src="assets/img/MSQL.png" alt="Mysql Logo" width="50" height="50" />
-          </div>
-
-          <div class="sills__bar">
-            <div class="skills__percentage" style="width: 100%">
-              <span></span>
-            </div>
-          </div>
-        </div>
-
-        <div class="skills__item">
-          <div class="skills__titles">
-            <h3 class="skills__name">Scripting Languages</h3>
-            <span class="skills__no">06</span>
-          </div>
-          <div class="image-container">
-            <img src="assets/img/js.png" alt="JS Logo" width="50" height="50" />
-            <img src="assets/img/TS.png" alt="TY Logo" width="50" height="50" />
-          </div>
-
-          <div class="sills__bar">
-            <div class="skills__percentage" style="width: 100%">
-              <span></span>
-            </div>
-          </div>
-        </div>
-
-        <div class="skills__item">
-          <div class="skills__titles">
-            <h3 class="skills__name">Code Controlling and Versioning</h3>
-            <span class="skills__no">07</span>
-          </div>
-          <div class="image-container">
-            <img src="assets/img/GIT.png" alt="GIT Logo" width="50" height="50" />
-            <img src="assets/img/Bitbucket.png" alt="BitBucket Logo" width="50" height="50" />
-          </div>
-
-          <div class="sills__bar">
-            <div class="skills__percentage" style="width: 100%">
-              <span></span>
-            </div>
-          </div>
-        </div>
-
-        <div class="skills__item">
-          <div class="skills__titles">
-            <h3 class="skills__name">IDE / Editor / Tools -</h3>
-            <span class="skills__no">08</span>
-          </div>
-          <div class="image-container">
-            <img src="assets/img/VS.png" alt="VS code Logo" width="50" height="50" />
-            <img src="assets/img/VS-studio.png" alt="Visual Studio Logo" width="50" height="50" />
-          </div>
-
-          <div class="sills__bar">
-            <div class="skills__percentage" style="width: 100%">
-              <span></span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--==================== PORTFOLIO ====================-->
-    <section class="works section" id="works">
-      <h2 class="section__title title-center" data-title="My Portfolio">
-        Recent Work
-      </h2>
-
-      <div class="work__container container grid">
-        <div class="work__card" style="height: 100; width:100;">
-          <img src="assets/img/Relutech.png" alt="" class="work__img" />
-
-          <div class="work__details">
-            <h3 class="work__title">Relutech</h3>
-            <span class="work__description">Server Migration Tool.</span>
-          </div>
-        </div>
-
-        <div class="work__card">
-          <img src="assets/img/EduCourse.jpg" alt="" class="work__img" />
-
-          <div class="work__details">
-            <h3 class="work__title">Educourse Learner</h3>
-            <span class="work__description">This is Online Learning website.</span>
-          </div>
-        </div>
-
-        <div class="work__card">
-          <img src="assets/img/society-1.png" alt="" class="work__img" />
-
-          <div class="work__details">
-            <h3 class="work__title">Society Management</h3>
-            <span class="work__description">This is Login/Home Page.</span>
-          </div>
-        </div>
-
-        <div class="work__card">
-          <img src="assets/img/SchoolM.png" alt="" class="work__img" />
-
-          <div class="work__details">
-            <h3 class="work__title">School Management</h3>
-            <span class="work__description">Details of School Management.</span>
-          </div>
-        </div>
-
-        <div class="work__card">
-          <img src="assets/img/Book-e-sell.png" alt="" class="work__img" />
-
-          <div class="work__details">
-            <h3 class="work__title">Book E sell</h3>
-            <span class="work__description">This is book selling project.</span>
-          </div>
-        </div>
-
-        <div class="work__card">
-          <img src="assets/img/Spotify.png" alt="" class="work__img" />
-
-          <div class="work__details">
-            <h3 class="work__title">Spotify web clone</h3>
-            <span class="work__description">Listening songs.</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--==================== TESTIMONIALS ====================-->
-    <section class="testimonials"></section>
-
-    <!--==================== CONTACT ====================-->
-    <section class="contact section" id="contact">
-      <h2 class="section__title title-center" data-title="Get in touch">
-        Contact Me
-      </h2>
-
-      <div class="contact__container container grid">
-        <div class="contact__details">
-          <div class="contact__item">
-            <i class="fa-solid fa-phone contact__icon"></i>
-
-            <div>
-              <h3 class="contact__title">Call Me</h3>
-              <span class="contact__data">+918530787426</span>
-            </div>
-          </div>
-
-          <div class="contact__item">
-            <i class="fa-solid fa-envelope contact__icon"></i>
-
-            <div>
-              <h3 class="contact__title">Email Me</h3>
-              <span class="contact__data">harshjambukiya75@gmail.com </span>
-            </div>
-          </div>
-
-          <div class="contact__item">
-            <i class="fa-solid fa-location-dot contact__icon"></i>
-
-            <div>
-              <h3 class="contact__title">Address</h3>
-              <span class="contact__data">Ahmedabad, Gujarat, India</span>
-            </div>
-          </div>
-        </div>
-
-        <form action="https://api.web3forms.com/submit" method="POST" class="contact__form">
-          <input type="hidden" name="access_key" value="f230814d-1fc3-4435-8a81-3d4c2ea38bbd" />
-          <div class="form__group">
-            <div class="form__input">
-              <input type="text" placeholder="Name" name="username" class="input__control" required
-                autocomplete="off" />
-            </div>
-
-            <div class="form__input">
-              <input type="email" placeholder="Email" name="email" class="input__control" required autocomplete="off" />
-            </div>
-          </div>
-
-          <div class="form__input">
-            <input type="text" placeholder="Subject" name="subject" class="input__control" required
-              autocomplete="off" />
-          </div>
-
-          <div class="form__input">
-            <textarea name="Message" id="Message" placeholder="Message" cols="30" rows="10"
-              class="input__control textarea" minlength="5"></textarea>
-          </div>
-
-          <button class="btn contact__btn">Send Message</button>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <!--==================== FOOTER ====================-->
-  <footer class="footer">
-    <div class="footer__container container">
-      <p class="footer__copyright">&copy; 2024 Harsh. All Rights Reserved</p>
-
-      <div class="footer__social-links">
-        <a href="https://github.com/HarshJambukiya" target="_blank" class="footer__social-link">
-          <i class="fa-brands fa-github"></i>
-        </a>
-
-        <a href="https://www.linkedin.com/in/harsh-jambukiya-/" target="_blank" class="footer__social-link">
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
+      <label for="day-night" class="style__switcher-theme">
+        <i class="fa-solid fa-sun"></i>
+        <i class="fa-solid fa-moon"></i>
+      </label>
+
+      <h3 class="style__switcher-title">Theme colors</h3>
+
+      <div class="style__switcher-colors">
+        <label for="color-1" class="color-1 color"></label>
+        <label for="color-2" class="color-2 color"></label>
+        <label for="color-3" class="color-3 color"></label>
+        <label for="color-4" class="color-4 color"></label>
+        <label for="color-5" class="color-5 color"></label>
+        <label for="color-6" class="color-6 color"></label>
+        <label for="color-7" class="color-7 color"></label>
+        <label for="color-8" class="color-8 color"></label>
+        <label for="color-9" class="color-9 color"></label>
+        <label for="color-10" class="color-10 color"></label>
       </div>
     </div>
-  </footer>
-</body>
 
+    <!--==================== HEADER ====================-->
+    <header class="header">
+      <nav class="nav container">
+        <a href="index.html" class="nav__logo">Harsh Jambukiya</a>
+
+        <input type="checkbox" id="nav-toggler" />
+
+        <label for="nav-toggler" class="nav__toggle">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link active-link">Home</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#qualification" class="nav__link">Experience</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#services" class="nav__link">Services</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#works" class="nav__link">Portfolio</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#certificates" class="nav__link">Certificates</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home" id="home">
+        <div class="home__container container grid">
+          <div class="home__content">
+            <span class="home__small">Hello</span>
+            <h1 class="home__title">
+              <span>I'm</span> Harsh <br />
+              an <span>Aspiring ML Engineer</span>
+            </h1>
+
+            <p class="home__description">
+              M.Tech student in Computer Engineering with a software development
+              background and growing expertise in machine learning, neural
+              networks, and data science. I am passionate about leveraging AI/ML
+              technologies to solve real-world problems and build intelligent
+              systems that make a difference.
+            </p>
+
+            <div class="home__btns">
+              <a href="#contact" class="btn">Hire Me</a>
+              <a href="#works" class="btn btn--transparent">Portfolio</a>
+            </div>
+          </div>
+
+          <div class="home__img-wrapper">
+            <img src="assets/img/HomeHarsh.png" alt="" class="home__img" />
+          </div>
+        </div>
+      </section>
+
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about">
+        <div class="about__container container grid">
+          <div class="about__img-wrapper">
+            <img src="assets/img/Harsh.png" alt="" class="about__img" />
+            <img src="assets/img/Harsh.png" alt="" class="about__img" />
+            <img src="assets/img/Harsh.png" alt="" class="about__img" />
+            <img src="assets/img/Harsh.png" alt="" class="about__img" />
+          </div>
+
+          <div class="about__content">
+            <h2 class="section__title" data-title="Who am i?">
+              I'm Harsh Jambukiya, an Aspiring Machine Learning Engineer
+            </h2>
+
+            <p class="about__description">
+              I'm pursuing my M.Tech in Computer Engineering at Dharmasinh Desai
+              University with a focus on Machine Learning and AI. With a solid
+              foundation in full-stack development and hands-on experience with
+              technologies like .NET and Angular, I'm now channeling my passion
+              into building intelligent systems using Python, TensorFlow, and
+              cutting-edge ML algorithms. I specialize in developing ML models
+              for real-world applications, from computer vision to
+              recommendation systems, and I'm constantly exploring new frontiers
+              in Generative AI and LLMs.
+            </p>
+
+            <ul class="about__data grid">
+              <li class="data__item">
+                <h3 class="data__title">From:</h3>
+                <span class="data__description">Mithapur, Gujarat</span>
+              </li>
+
+              <li class="data__item">
+                <h3 class="data__title">Email:</h3>
+                <a
+                  href="mailto:harshjambukiya75@gmail.com?subject=Contact&body=Hi%2C%0A%0AI%20saw%20your%20Portfolio%20and%20I%20want%20to%20contact%20you."
+                  class="contact__data"
+                  >harshjambukiya75@gmail.com</a
+                >
+              </li>
+            </ul>
+
+            <div class="about__bottom">
+              <a
+                href="https://drive.google.com/file/d/1h7hyjil7koFTNn_AosfOhfXyly43hzsX/view?usp=sharing"
+                target="_blank"
+                class="btn"
+                >Download CV</a
+              >
+
+              <div class="about__social-links">
+                <a
+                  href="https://github.com/HarshJambukiya"
+                  target="_blank"
+                  class="about__social-link"
+                >
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/harsh-jambukiya-/"
+                  target="_blank"
+                  class="about__social-link"
+                >
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== QUALIFICATION ====================-->
+      <section class="qualification section" id="qualification">
+        <h2 class="section__title title-center" data-title="My Journey">
+          Qualification
+        </h2>
+
+        <div class="resume__container container grid">
+          <div class="resume__group">
+            <h3 class="resume__heading">Education</h3>
+
+            <div class="resume__items">
+              <div class="resume__item">
+                <div class="resume__header">
+                  <h3 class="resume__subtitle">
+                    Dharmasinh Desai University (DDU)
+                  </h3>
+                  <span class="resume__icon">+</span>
+                </div>
+
+                <div class="resume__content">
+                  <div class="resume__datea-title">
+                    <h3 class="resume__title">
+                      M.Tech in Computer Engineering
+                    </h3>
+                    <span class="resume__date"
+                      >September 2024 – August 2025</span
+                    >
+                  </div>
+
+                  <p class="resume__description">
+                    Currently pursuing Master of Technology in Computer
+                    Engineering at DDU, Nadiad, Gujarat with a focus on Machine
+                    Learning, Neural Networks, and AI technologies. CGPA:
+                    6.72/10.
+                  </p>
+                </div>
+              </div>
+
+              <div class="resume__item">
+                <div class="resume__header">
+                  <h3 class="resume__subtitle">
+                    LDRP Institute of Technology and Research
+                  </h3>
+                  <span class="resume__icon">-</span>
+                </div>
+
+                <div class="resume__content">
+                  <div class="resume__datea-title">
+                    <h3 class="resume__title">Bachelor of Engineering</h3>
+                    <span class="resume__date">May 2019 – September 2023</span>
+                  </div>
+
+                  <p class="resume__description">
+                    Graduated with a Bachelor of Engineering in Computer Science
+                    from LDRP-ITR with a CGPA of 6.84 out of 10, showcasing
+                    strong academic performance and proficiency in computer
+                    science fundamentals.
+                  </p>
+                </div>
+              </div>
+
+              <div class="resume__item">
+                <div class="resume__header">
+                  <h3 class="resume__subtitle">
+                    Swaminarayan Gurukul Rajkot Sansthan
+                  </h3>
+                  <span class="resume__icon">+</span>
+                </div>
+
+                <div class="resume__content">
+                  <div class="resume__datea-title">
+                    <h3 class="resume__title">
+                      Higher Secondary Certificate (HSC)
+                    </h3>
+                    <span class="resume__date">2017 – 2019</span>
+                  </div>
+
+                  <p class="resume__description">Percentage: 67.66%</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="resume__group">
+            <h3 class="resume__heading">Experience</h3>
+
+            <div class="resume__items">
+              <div class="resume__item">
+                <div class="resume__header">
+                  <h3 class="resume__subtitle">.NET Developer</h3>
+                  <span class="resume__icon">+</span>
+                </div>
+
+                <div class="resume__content">
+                  <div class="resume__datea-title">
+                    <h3 class="resume__title">
+                      Pravik IT Solutions, Ahmedabad
+                    </h3>
+                    <span class="resume__date">October 2023 - June 2024</span>
+                  </div>
+
+                  <p class="resume__description">
+                    Underwent 6-month .NET developer training and spearheaded an
+                    education web project. Prepared scripts, created APIs for
+                    seamless integration, and conducted backend data testing.
+                    Worked extensively with databases and .NET technologies to
+                    enhance project functionality and performance.
+                  </p>
+                </div>
+              </div>
+
+              <div class="resume__item">
+                <div class="resume__header">
+                  <h3 class="resume__subtitle">Angular Developer</h3>
+                  <span class="resume__icon">-</span>
+                </div>
+
+                <div class="resume__content">
+                  <div class="resume__datea-title">
+                    <h3 class="resume__title">
+                      Vedikin Solutions, Gandhinagar
+                    </h3>
+                    <span class="resume__date">May 2023 - September 2023</span>
+                  </div>
+
+                  <p class="resume__description">
+                    Played a key role in the Relutech project, enhancing data
+                    migration to cloud and providing accurate cost estimation.
+                    Led design and development efforts, directly communicated
+                    with clients to understand requirements, implemented
+                    necessary enhancements, and developed Angular components to
+                    elevate functionality.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== SERVICES ====================-->
+      <section class="services section" id="services">
+        <h2 class="section__title title-center" data-title="Services">
+          What I do for you
+        </h2>
+
+        <div class="services__container container grid">
+          <div class="services__item">
+            <i class="fa-solid fa-brain services__icon"></i>
+
+            <h3 class="services__title">Machine Learning Solutions</h3>
+            <p class="services__description">
+              I develop custom ML models using Python, TensorFlow, and
+              Scikit-learn for various applications including classification,
+              regression, and clustering. Expertise in data preprocessing,
+              feature engineering, and model evaluation to deliver accurate and
+              efficient solutions.
+            </p>
+
+            <span class="services__no">01</span>
+          </div>
+
+          <div class="services__item">
+            <i class="fa-solid fa-robot services__icon"></i>
+
+            <h3 class="services__title">AI & Deep Learning</h3>
+            <p class="services__description">
+              Specialized in building neural networks and deep learning models
+              for computer vision and NLP tasks. Experienced with CNNs for image
+              recognition, and working with Generative AI and LLMs through
+              prompt engineering techniques.
+            </p>
+
+            <span class="services__no">02</span>
+          </div>
+
+          <div class="services__item">
+            <i class="fa-solid fa-code services__icon"></i>
+
+            <h3 class="services__title">Full Stack Development</h3>
+            <p class="services__description">
+              Strong foundation in full-stack development with Angular for
+              frontend and .NET for backend. Proficient in building RESTful
+              APIs, database management, and deploying scalable applications.
+              Skilled in integrating ML models into production systems.
+            </p>
+
+            <span class="services__no">03</span>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== SKILLS ====================-->
+      <section class="skills section">
+        <h2 class="section__title title-center" data-title="My Talent">
+          Skills
+        </h2>
+
+        <div class="skills__container container grid">
+          <div class="skills__item">
+            <div class="skills__titles">
+              <h3 class="skills__name">Programming Languages</h3>
+              <span class="skills__no">01</span>
+            </div>
+
+            <div class="image-container">
+              <img src="assets/img/c.png" alt="C Logo" width="50" height="50" />
+              <img
+                src="assets/img/c++.png"
+                alt="C++ Logo"
+                width="50"
+                height="50"
+              />
+              
+              <img
+                src="assets/img/csharp.png"
+                alt="C# Logo"
+                width="50"
+                height="50"
+              />
+            </div>
+
+            <div class="sills__bar">
+              <div class="skills__percentage" style="width: 100%">
+                <span></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills__item">
+            <div class="skills__titles">
+              <h3 class="skills__name">Python & ML Libraries</h3>
+              <span class="skills__no">02</span>
+            </div>
+
+            <!-- Logos -->
+            <div class="image-container">
+              <img
+                src="assets/img/python.png"
+                alt="Python Logo"
+                width="50"
+                height="50"
+              />
+              <img
+                src="assets/img/numpy.png"
+                alt="NumPy Logo"
+                width="50"
+                height="50"
+              />
+              <img
+                src="assets/img/pandas.png"
+                alt="Pandas Logo"
+                width="50"
+                height="50"
+              />
+              <img
+                src="assets/img/tensorflow.png"
+                alt="TensorFlow Logo"
+                width="50"
+                height="50"
+              />
+            </div>
+
+            <div class="sills__bar">
+              <div class="skills__percentage" style="width: 100%">
+                <span></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills__item">
+  <div class="skills__titles">
+    <h3 class="skills__name">AI & ML Tools</h3>
+    <span class="skills__no">03</span>
+  </div>
+
+  <!-- Tool Logos -->
+  <div class="image-container">
+    <img src="assets/img/jupyter.png" alt="Jupyter Notebook Logo" width="50" height="50" />
+    <img src="assets/img/colab.png" alt="Google Colab Logo" width="50" height="50" />
+    <img src="assets/img/vscode.png" alt="VS Code Logo" width="50" height="50" />
+    <img src="assets/img/llm.png" alt="LLM Logo" width="50" height="50" />
+  </div>
+
+
+  <div class="sills__bar">
+    <div class="skills__percentage" style="width: 100%">
+      <span></span>
+    </div>
+  </div>
+</div>
+
+
+          <div class="skills__item">
+            <div class="skills__titles">
+              <h3 class="skills__name">Frontend Technologies</h3>
+              <span class="skills__no">04</span>
+            </div>
+
+            <div class="image-container">
+              <img
+                src="assets/img/html.png"
+                alt="HTML Logo"
+                width="50"
+                height="50"
+              />
+              <img
+                src="assets/img/css.png"
+                alt="CSS Logo"
+                width="50"
+                height="50"
+              />
+              <img
+                src="assets/img/BT.png"
+                alt="Bootstrap Logo"
+                width="50"
+                height="50"
+              />
+              <img
+                src="assets/img/Angular.png"
+                alt="Angular Logo"
+                width="50"
+                height="50"
+              />
+            </div>
+
+            <div class="sills__bar">
+              <div class="skills__percentage" style="width: 100%">
+                <span></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills__item">
+            <div class="skills__titles">
+              <h3 class="skills__name">Backend Technologies</h3>
+              <span class="skills__no">05</span>
+            </div>
+
+            <div class="image-container">
+              <img
+                src="assets/img/net-core.png"
+                alt=".Net-core Logo"
+                width="50"
+                height="50"
+              />
+              <img
+                src="assets/img/ASP.png"
+                alt="ASP .net Logo"
+                width="50"
+                height="50"
+              />
+            </div>
+
+            <div class="sills__bar">
+              <div class="skills__percentage" style="width: 100%">
+                <span></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills__item">
+            <div class="skills__titles">
+              <h3 class="skills__name">Database & Other Tools</h3>
+              <span class="skills__no">06</span>
+            </div>
+
+            <div class="image-container">
+              <img
+                src="assets/img/SQL-server.png"
+                alt="SQL Server Logo"
+                width="50"
+                height="50"
+              />
+              <img
+                src="assets/img/PS.png"
+                alt="PostgreSQL Logo"
+                width="50"
+                height="50"
+              />
+              <img
+                src="assets/img/MSQL.png"
+                alt="MySQL Logo"
+                width="50"
+                height="50"
+              />
+            </div>
+
+            <div class="sills__bar">
+              <div class="skills__percentage" style="width: 100%">
+                <span></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills__item">
+            <div class="skills__titles">
+              <h3 class="skills__name">Scripting Languages</h3>
+              <span class="skills__no">07</span>
+            </div>
+            <div class="image-container">
+              <img
+                src="assets/img/js.png"
+                alt="JavaScript Logo"
+                width="50"
+                height="50"
+              />
+              <img
+                src="assets/img/TS.png"
+                alt="TypeScript Logo"
+                width="50"
+                height="50"
+              />
+            </div>
+
+            <div class="sills__bar">
+              <div class="skills__percentage" style="width: 100%">
+                <span></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skills__item">
+            <div class="skills__titles">
+              <h3 class="skills__name">Version Control</h3>
+              <span class="skills__no">08</span>
+            </div>
+            <div class="image-container">
+              <img
+                src="assets/img/GIT.png"
+                alt="GIT Logo"
+                width="50"
+                height="50"
+              />
+              <img
+                src="assets/img/Bitbucket.png"
+                alt="BitBucket Logo"
+                width="50"
+                height="50"
+              />
+            </div>
+
+            <div class="sills__bar">
+              <div class="skills__percentage" style="width: 100%">
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== PORTFOLIO ====================-->
+      <section class="works section" id="works">
+        <h2 class="section__title title-center" data-title="My Portfolio">
+          Recent Projects
+        </h2>
+
+        <div class="work__container container grid">
+          <div class="work__card">
+            <img
+              src="assets/img/face-mask.png"
+              alt="Face Mask Detection"
+              class="work__img"
+              onerror="this.src='https://via.placeholder.com/400x300/667eea/ffffff?text=Face+Mask+Detection'"
+            />
+
+            <div class="work__details">
+              <h3 class="work__title">
+                Face Mask Detection using CNN & OpenCV
+              </h3>
+              <span class="work__description"
+                >Real-time face mask detection system using Convolutional Neural
+                Networks and OpenCV. Implements image augmentation, dropout
+                regularization, and comprehensive model evaluation.</span
+              >
+            </div>
+          </div>
+
+          <div class="work__card">
+            <img
+              src="assets/img/movie-rec.png"
+              alt="Movie Recommendation"
+              class="work__img"
+              onerror="this.src='https://via.placeholder.com/400x300/764ba2/ffffff?text=Movie+Recommender'"
+            />
+
+            <div class="work__details">
+              <h3 class="work__title">Movie Recommendation System</h3>
+              <span class="work__description"
+                >Content-based movie recommendation system using NLP techniques
+                (CountVectorizer, cosine similarity). Deployed with Streamlit
+                and integrated with TMDB API for dynamic poster fetching.</span
+              >
+            </div>
+          </div>
+
+          <div class="work__card">
+            <img
+              src="assets/img/Relutech.png"
+              alt="Relutech"
+              class="work__img"
+            />
+
+            <div class="work__details">
+              <h3 class="work__title">RELUTECH - Server Migration Tool</h3>
+              <span class="work__description"
+                >Designed critical features using Angular and PHP. Facilitated
+                efficient data migration to cloud storage with robust security
+                through hash code password storage.</span
+              >
+            </div>
+          </div>
+
+          <div class="work__card">
+            <img
+              src="assets/img/EduCourse.jpg"
+              alt="Educourse"
+              class="work__img"
+            />
+
+            <div class="work__details">
+              <h3 class="work__title">Educourse Learner</h3>
+              <span class="work__description"
+                >Online learning platform with comprehensive course management
+                and interactive features.</span
+              >
+            </div>
+          </div>
+
+          <div class="work__card">
+            <img
+              src="assets/img/society-1.png"
+              alt="Society Management"
+              class="work__img"
+            />
+
+            <div class="work__details">
+              <h3 class="work__title">Society Management System</h3>
+              <span class="work__description"
+                >Complete society management solution with member tracking and
+                administrative features.</span
+              >
+            </div>
+          </div>
+
+          <div class="work__card">
+            <img
+              src="assets/img/Book-e-sell.png"
+              alt="Book E-sell"
+              class="work__img"
+            />
+
+            <div class="work__details">
+              <h3 class="work__title">Book-e-Sell E-commerce</h3>
+              <span class="work__description"
+                >Full-stack e-commerce platform built with React.js, .NET
+                backend, and PostgreSQL database.</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== CERTIFICATES ====================-->
+      <section class="certificates section" id="certificates">
+        <h2 class="section__title title-center" data-title="Achievements">
+          Certificates & Accomplishments
+        </h2>
+
+        <div class="certificates__container container">
+          <div class="certificates__items">
+            <div class="certificate__item">
+              <i class="fa-solid fa-certificate certificate__icon"></i>
+              <div class="certificate__content">
+                <h3 class="certificate__title">
+                  AI Engineering Masterclass: From Zero to AI Hero with ChatGPT,
+                  Bard, Langchain
+                </h3>
+                <span class="certificate__platform">Udemy</span>
+                <span class="certificate__date">May 2025 - August 2025</span>
+              </div>
+            </div>
+
+            <div class="certificate__item">
+              <i class="fa-solid fa-certificate certificate__icon"></i>
+              <div class="certificate__content">
+                <h3 class="certificate__title">
+                  NumPy Programming Mastery: Learn Python for Data Analysis
+                </h3>
+                <span class="certificate__platform">Udemy</span>
+                <span class="certificate__date">May 2025 - June 2025</span>
+              </div>
+            </div>
+
+            <div class="certificate__item">
+              <i class="fa-solid fa-award certificate__icon"></i>
+              <div class="certificate__content">
+                <h3 class="certificate__title">TCS iON NQT - IT</h3>
+                <span class="certificate__platform">TCS iON</span>
+                <span class="certificate__date">June 2024 | Score: 60.77%</span>
+              </div>
+            </div>
+
+            <div class="certificate__item">
+              <i class="fa-solid fa-certificate certificate__icon"></i>
+              <div class="certificate__content">
+                <h3 class="certificate__title">
+                  Learn The Fundamentals Of Git Command-Line Tool And GitHub
+                </h3>
+                <span class="certificate__platform">Udemy</span>
+                <span class="certificate__date">May 2022 - June 2023</span>
+              </div>
+            </div>
+
+            <div class="certificate__item">
+              <i class="fa-solid fa-certificate certificate__icon"></i>
+              <div class="certificate__content">
+                <h3 class="certificate__title">
+                  Introduction to Structured Query Language (SQL)
+                </h3>
+                <span class="certificate__platform">Udemy</span>
+                <span class="certificate__date">April 2023 - May 2023</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== CONTACT ====================-->
+      <section class="contact section" id="contact">
+        <h2 class="section__title title-center" data-title="Get in touch">
+          Contact Me
+        </h2>
+
+        <div class="contact__container container grid">
+          <div class="contact__details">
+            <div class="contact__item">
+              <i class="fa-solid fa-phone contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Call Me</h3>
+                <span class="contact__data">+918530787426</span>
+              </div>
+            </div>
+
+            <div class="contact__item">
+              <i class="fa-solid fa-envelope contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Email Me</h3>
+                <span class="contact__data">harshjambukiya75@gmail.com</span>
+              </div>
+            </div>
+
+            <div class="contact__item">
+              <i class="fa-solid fa-location-dot contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Location</h3>
+                <span class="contact__data">Mithapur, Gujarat, India</span>
+              </div>
+            </div>
+          </div>
+
+          <form
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            class="contact__form"
+          >
+            <input
+              type="hidden"
+              name="access_key"
+              value="f230814d-1fc3-4435-8a81-3d4c2ea38bbd"
+            />
+            <div class="form__group">
+              <div class="form__input">
+                <input
+                  type="text"
+                  placeholder="Name"
+                  name="username"
+                  class="input__control"
+                  required
+                  autocomplete="off"
+                />
+              </div>
+
+              <div class="form__input">
+                <input
+                  type="email"
+                  placeholder="Email"
+                  name="email"
+                  class="input__control"
+                  required
+                  autocomplete="off"
+                />
+              </div>
+            </div>
+
+            <div class="form__input">
+              <input
+                type="text"
+                placeholder="Subject"
+                name="subject"
+                class="input__control"
+                required
+                autocomplete="off"
+              />
+            </div>
+
+            <div class="form__input">
+              <textarea
+                name="Message"
+                id="Message"
+                placeholder="Message"
+                cols="30"
+                rows="10"
+                class="input__control textarea"
+                minlength="5"
+              ></textarea>
+            </div>
+
+            <button class="btn contact__btn">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+      <div class="footer__container container">
+        <p class="footer__copyright">
+          &copy; 2025 Harsh Jambukiya. All Rights Reserved
+        </p>
+
+        <div class="footer__social-links">
+          <a
+            href="https://github.com/HarshJambukiya"
+            target="_blank"
+            class="footer__social-link"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/harsh-jambukiya-/"
+            target="_blank"
+            class="footer__social-link"
+          >
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <style>
+      /* Additional styles for certificates section */
+      .certificates__items {
+        display: grid;
+        gap: 1.5rem;
+      }
+
+      .certificate__item {
+        background: var(--container-color);
+        padding: 1.5rem;
+        border-radius: 0.5rem;
+        display: flex;
+        gap: 1rem;
+        align-items: flex-start;
+        transition: transform 0.3s;
+      }
+
+      .certificate__item:hover {
+        transform: translateY(-5px);
+      }
+
+      .certificate__icon {
+        font-size: 2rem;
+        color: var(--first-color);
+        margin-top: 0.25rem;
+      }
+
+      .certificate__content {
+        flex: 1;
+      }
+
+      .certificate__title {
+        font-size: var(--h3-font-size);
+        margin-bottom: 0.5rem;
+        color: var(--title-color);
+      }
+
+      .certificate__platform,
+      .certificate__date {
+        display: block;
+        font-size: var(--small-font-size);
+        color: var(--text-color);
+        margin-top: 0.25rem;
+      }
+
+      .skills__description {
+        font-size: var(--small-font-size);
+        line-height: 1.6;
+      }
+    </style>
+  </body>
 </html>

@@ -488,6 +488,10 @@ input[type='checkbox'] {
 .about__img-wrapper {
   position: relative;
   height: 400px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .about__img {
